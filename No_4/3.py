@@ -4,17 +4,17 @@
 """ 
 
 def frange(start, end, ement):
-	x = start
-	while x < end:
-		yield x
-		x += ement
+    x = start
+    while x < end:
+        yield x
+        x += ement
 
 def main():
-	tmp = list(frange(1, 10, 0.2))
-	print(tmp)
+    tmp = list(frange(1, 10, 0.2))
+    print(tmp)
 
-	for i in frange(0, 5, 0.5):
-		print(i)
+    for i in frange(0, 5, 0.5):
+        print(i)
 
 if __name__ == '__main__':
-	main()
+    main()

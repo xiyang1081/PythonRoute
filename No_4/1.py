@@ -6,20 +6,20 @@
 """
 
 def manual_iter():
-	with open('test.txt') as f:
-		try:
-			while True:
-				line = next(f)
-				if line is None:
-					break
-				print(line, end='')
-		except StopIteration:
-			print('StopIteration!')
-		finally:
-			print('finally!')
+    with open('test.txt') as f:
+        try:
+            while True:
+                line = next(f)
+                if line is None:
+                    break
+                print(line, end='')
+        except StopIteration:
+            print('StopIteration!')
+        finally:
+            print('finally!')
 
 def main():
-	manual_iter()
+    manual_iter()
 
 if __name__ == '__main__':
-	main()
+    main()
